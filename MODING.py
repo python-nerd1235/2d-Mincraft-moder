@@ -1,5 +1,5 @@
 #2d mincraft mod maker 
-#ver 1.0
+#ver 1.0_A
 #game at: https://github.com/python-nerd1235/2d-Minecraft-with-Pygame/tree/main
 import json
 names=['grass']
@@ -19,7 +19,7 @@ while True:
     files.append(a)
     if input('Quit?y/n: ').lower =='y':
         break
-with open('blocks.json', 'w') as f:
+with open(input('enter the name of your mod: ')+'.json', 'w') as f:
     data = {
         "b": [],
         "bt": [],
